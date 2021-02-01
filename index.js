@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 console.log(__dirname);
 const app = express();
 
+app.use(express.static(require.main.path + '/'));
 app.use(bodyParser.json());
 
 app.use(function (req, res, next) {

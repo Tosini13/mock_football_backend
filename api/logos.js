@@ -1,9 +1,8 @@
-const fs = require('fs');
+// not needed because of static logos files
+
 
 const getLogos = (_req, res) => {
-    const url = require.main.path + '\\images\\ekstraklasa.png';
-    console.log(url);
-    const rawData = fs.readFileSync(url);
+    const url = require.main.path + '\\logos\\ekstraklasa.png';
     res.sendFile(url);
 }
 
